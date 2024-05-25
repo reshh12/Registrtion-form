@@ -1,0 +1,160 @@
+body {
+    background: linear-gradient(to bottom right, #000851, #1CB5E0, #1CB5E0, #000851);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #1CB5E0;
+  }
+  
+  .box {
+    border-radius: 40px;
+    margin: 170px auto 180px;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  .box label {
+    text-align: left;
+    display: block;
+  }
+  
+  .box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    border-bottom: 1px solid skyblue;
+    outline: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .terms-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .terms-text {
+    margin-left: 5px;
+  }
+  
+  .terms-text a {
+    text-decoration: underline;
+  }
+  
+  .box input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: skyblue;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .box input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+  }
+  
+  .box .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .button-container {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  
+  .button-container button {
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #1CB5E0;
+    font-family: Roboto;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #000851;
+  }
+  
+  .create-account-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: skyblue;
+    margin: 0 10px;
+  }
+  
+  .text {
+    font-size: 20px;
+    color: grey;
+  }
+  
+  .social-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons i {
+    margin: 0 20px;
+    font-size: 40px;
+    color: #1CB5E0;
+  }
+  
+  @media (max-width: 600px) {
+    .box {
+      margin: 170px 20px 180px;
+    }
+  
+    .button-container button {
+      width: 120px;
+    }
+  
+    .social-icons {
+      margin-top: 20px;
+    }
+  
+    .social-icons i {
+      font-size: 30px;
+    }
+  }
+  
